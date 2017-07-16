@@ -1,2 +1,2 @@
 # AngularJS
-Repository for educational purposes
+Repository for educational purposes.
