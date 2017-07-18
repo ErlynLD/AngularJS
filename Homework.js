@@ -14,6 +14,8 @@ function()
     console.log("Edad: ", edad);
     console.log("Conocimientos de programación: ", conProgramacion);
     console.log("Expectativas del curso: ", expectativas);
+
+    console.log("Erlyn aprende a sincronizar Git con GitHub.");
     
 })();
 
