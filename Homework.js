@@ -16,4 +16,3 @@ function()
     console.log("Expectativas del curso: ", expectativas);
     
 })();
-
