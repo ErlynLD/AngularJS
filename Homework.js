@@ -15,4 +15,5 @@ function()
     console.log("Conocimientos de programación: ", conProgramacion);
     console.log("Expectativas del curso: ", expectativas);
     
+    console.log("Saludos");
 })();
