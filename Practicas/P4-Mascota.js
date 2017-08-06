@@ -14,7 +14,7 @@
             console.log("Perro comiendo");
         }, 
         this.getEdad = function(){
-            console.log((new Date().getFullYear - this.anoNac) + " años.");
+            console.log((new Date().getFullYear() - this.anoNac) + " años.");
         },
         this.getNombreYRaza = function(){
             console.log("Nombre: " + this.nombre + "\nRaza: " + this.raza);
@@ -26,5 +26,6 @@
 
     var perro1 = new Perro("Lazy", "Pastor Alemán", 2003, 'F');
     perro1.getNombreYRaza();
+    perro1.getEdad();
     
 })();
