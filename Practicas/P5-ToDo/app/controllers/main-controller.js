@@ -28,11 +28,13 @@
             }
 
             vm.eliminarTarea = function(indice){
-                if($index >= 0){
+                if(indice >= 0){
                     vm.tareas.splice(indice, 1);
                     //alert(indice);
                 }
             }
+
+            
         }
     }
 )();
