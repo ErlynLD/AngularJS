@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>P5 - AngularJS</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <meta charset='UTF-8' />  
+    </head>
+    <body>
+        <h1>Práctica No.5 - Uso de directivas AngularJS</h1>
+        <div ng-app="PrimApp">
+            <div ng-controller="PrimController as vm">
+                <input type="text" placeholder="Escriba su tarea aquí" ng-model="vm.tarea"/>
+                <button ng-click="vm.agregarTarea()">Agregar</button>
+
+                <!-- <p>{{vm.numeroTareas}}</p>
+                <p>{{vm.tarea}}</p> -->
+
+                <h3>Lista de tareas</h3>
+                <ol>
+                    <!-- <li ng-repeat="ta in vm.tareas">{{ta}} <input type="button" value="Eliminar" ng-click="vm.eliminarTarea()"></li> -->
+                     <li ng-repeat="ta in vm.tareas">{{ta}} <input type="button" value="Eliminar" ng-click="vm.eliminarTarea($index)"></li> 
+                </ol>
+            </div>
+        </div>
+
+        <script src="../../Plugin/angular.min.js"></script>
+        <script src="app/main.js"></script>
+        <script src="app/controllers/main-controller.js"></script>
+    </body>
+</html>
